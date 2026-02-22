@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .success {
+            color: green;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="success">{{ message }}</div>
+    <p>{{ status.scans }} / {{ target }} σφραγίδες</p>
+
+    <a href="{{ home_url }}" class="btn">Επιστροφή</a>
+</div>
+
+</body>
+</html>
